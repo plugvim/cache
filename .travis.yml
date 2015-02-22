@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 1.8.7
+
+env:
+  global:
+    # Var is GIT_REPO
+    - secure: "cXgg2H3UgHkOd3ke1zp/DBYjG1Q0T+MA+xy9IGFL3k6G4lY/rC7yPspx/89RtFVc9HcOJt3mBzaslAF6k8AwpM70BJ49QHQoVJ7ASC6enRXR/jbvhmCEHlR8ThKUaJebL9CtsvxeaGpPRH1/4sfyvcVc79R3dFJ8IxXONohBINc="
+
+before_script: |
+  ./build.sh
+
+script: |
+  echo "Build Done."
