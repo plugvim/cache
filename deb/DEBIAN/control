@@ -1,0 +1,8 @@
+Package: plug-vim
+Architecture: amd64
+Version: 0.1
+Maintainer: starcraft.man <dummy@none.com>
+Section: devel
+Priority: optional
+Homepage: https://vim.googlecode.com/hg/
+Description: Vim for vim-plug tests
