@@ -18,7 +18,7 @@ hg clone https://code.google.com/p/vim/
 # Build ruby vim
 cd vim
 ./configure --prefix="$RDEB_DIR/usr/local" --with-features=huge --enable-rubyinterp
-make && make install
+make VIMRUNTIMEDIR=/usr/local/share/vim/vim74 && make install
 cd -
 cp -r "$SCRIPT_DIR/DEBIAN" "$RDEB_DIR"
 dpkg-deb --build "$RDEB_DIR"
@@ -26,7 +26,7 @@ dpkg-deb --build "$RDEB_DIR"
 # Build python vim
 cd vim
 ./configure --prefix="$PDEB_DIR/usr/local" --with-features=huge --enable-pythoninterp
-make && make install
+make VIMRUNTIMEDIR=/usr/local/share/vim/vim74 && make install
 cd -
 cp -r "$SCRIPT_DIR/DEBIAN" "$PDEB_DIR"
 dpkg-deb --build "$PDEB_DIR"
